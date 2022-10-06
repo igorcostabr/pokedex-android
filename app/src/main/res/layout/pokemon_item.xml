@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
 
     <ImageView
         android:id="@+id/ivPokemon"
@@ -35,29 +36,30 @@
         android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:textColor="#313131"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ivPokemon"
+        app:layout_constraintTop_toBottomOf="@id/tvNumber"
         tools:text="Charmander" />
+
 
     <TextView
         android:id="@+id/tvType1"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="56dp"
         android:background="#fd7d24"
         android:gravity="center_horizontal"
         android:textAlignment="center"
         android:textColor="#ffffff"
-
         android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ivPokemon"
+        app:layout_constraintTop_toBottomOf="@id/tvName"
         tools:ignore="UnknownId"
         tools:text="Fire" />
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
